@@ -1,21 +1,13 @@
-const Letter = require("./Letter.js");
+const Letter = require('Letter');
 
-class Word {
-    constructor (word) {
-        this.word = word;
-        this.wordGuessed = true;
-    }
-    noGuess () {
-        if (this.wordGuessed === true) {
-            return this.word;
-        } else {
-            return "_";
-        }
-
-        // return (this.letterGuessed === true) ? this.word : "_";
+function Word(answer) {
+    // Array to hold letters guessed
+    let wordArr = [];
+    // Take the letters and create new object and push said object into above array.
+    for (let i = 0; i < wordArr.length; i++) {
+        let letter = new Letter(answer[i]);
+        this.wordArr.push(letter);
     }
 }
-let word = new Word('help');
 
-console.log (word.noGuess());
-
+module.exports = Word;
