@@ -59,7 +59,7 @@ function theLogic() {
           inquirer.prompt([
                {
                     type: 'input',
-                    message: 'Select a letter from A to Z',
+                    message: 'Welcome to Baseball Word Guess! Select a letter from A to Z',
                     name: 'userinput'
                }
           ]).then(function (input) {
@@ -102,7 +102,7 @@ function theLogic() {
                          if (guessesLeft > 0) {
                               theLogic();
                          } else {
-                              console.loq('You have Lost!\n')
+                              console.log('You Lose!\n');
 
                               restartGame();
                          }
