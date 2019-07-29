@@ -10,8 +10,8 @@ function Word(answer) {
     }
 
     this.log = function () {
-        const answerLog = "";
-        for(let I = 0; i < this.objArray.length; i++) {
+        let answerLog = "";
+        for(let i = 0; i < this.objArray.length; i++) {
             answerLog += this.objArray[i] + " ";
         }
         console.log(answerLog + "\n------------------------")
