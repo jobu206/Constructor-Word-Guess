@@ -1,12 +1,26 @@
-const Letter = require('Letter');
+const Letter = require('./Letter');
 
 function Word(answer) {
     // Array to hold letters guessed
-    let wordArr = [];
-    // Take the letters and create new object and push said object into above array.
-    for (let i = 0; i < wordArr.length; i++) {
+    this.objArray = [];
+
+    for (let i = 0; i < answer.length; i++) {
         let letter = new Letter(answer[i]);
-        this.wordArr.push(letter);
+        this.objArray.push(letter);        
+    }
+
+    this.log = function () {
+        const answerLog = "";
+        for(let I = 0; i < this.objArray.length; i++) {
+            answerLog += this.objArray[i] + " ";
+        }
+        console.log(answerLog + "\n------------------------")
+    }
+
+    this.userGuess = function(input) {
+        for (let i = 0; i < this.objArray.length; i++) {
+            this.objArray[i].guess(input);
+        }
     }
 }
 

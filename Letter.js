@@ -1,5 +1,24 @@
-function LetterGuessed(letter) {
-    this.letter = letter;
+function Letter(letter) {
+    this.letter = value;
     this.guessed = false;
 
+
+    this.toString = function () {
+        if (this.letter === " ") {
+            return " ";
+        } else {
+            if (this.guessed === false) {
+                return "_";
+            } else {
+                return this.letter;
+            }
+        }
+    };
+    this.guess = function(guess) {
+        if(guess === this.letter) {
+            this.guessed = true;
+        }
+    }
 }
+
+module.exports = Letter;
