@@ -1,6 +1,6 @@
 # Constructor-Word-Guess
 [![NPM version](http://img.shields.io/npm/v/npm-expansions.svg?style=flag-square)](https://www.npmjs.org/package/npm-expansions)
-[![MIT licensed](https://shields.io/badge/license-MIT-blue.svg)](./LICENSE)
+[![License: MIT](https://img.shields.io/badge/License-MIT-red.svg)](./LICENSE)
 [![npm package](https://badge.fury.io/js/inquirer.svg)](http://badge.fury.io/js/inquirer)
 
 Welcome to the Baseball Word Guess Game! This is a CLI Node Application that asks for user input to guess a word. This applicatio also uses the Inquirer node package to take user inputs. The purpose of this application is to showcase Node JS Skills coupled with JS Constructor Functions.
