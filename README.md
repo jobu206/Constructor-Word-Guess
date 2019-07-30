@@ -8,7 +8,6 @@ Welcome to the Baseball Word Guess Game! This is a CLI Node Application that ask
 These instructions will get you up and running on your local machine for development and testing purposes.
 
 ### Prerequisites
-### Prerequisites
 You will need the following installed...
 
 1. ***Node***
@@ -21,7 +20,7 @@ You will need the following installed...
             1. Now type `brew install node`.
 
 1. ***Inquirer Node Package***
-     1. Inquirer is a [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) based Node Package which consumes user input to control responses.
+     1. [Inquirer](https://www.npmjs.com/package/inquirer) is a [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) based Node Package which consumes user input to control responses.
           1. To install simply run `npm i inquirer` in your application directory.
                1. You must have Node installed first, prior to running the above command.
 
